@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gordita", sans-serif;
+}
+.sticky-top {
+  position: fixed;
+  top: 0;
+  background-color: #fcfcfc;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info-text {
+  color: #ff7c08;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-right: 1.5rem;
+}
+
+.img-contact {
+  padding-right: 0.5rem;
+  padding-bottom: 2px;
+}
+
+.social-media-info {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: end;
+  justify-content: end;
+}
+
+.linkedin-logo {
+  margin-right: 2rem;
+}
+
+#main-navbar {
+  background-color: #081539;
+}
+
+#main-navbar li a {
+  color: #ffffff;
+}
+
+#main-navbar ul li ul li a {
+  color: black;
+}
+
+#navbarNavDropdown ul li {
+  padding-left: 2.5rem;
+}
+
+.search-icon {
+  padding-top: 2px;
+  padding-left: 2.5rem;
+}
+
+/* hover yapmak için */
+@media (min-width: 576px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.bg-gradient-navbarcolor {
+  background: linear-gradient(
+    270deg,
+    #091538 2.85%,
+    #0c1f53 9.81%,
+    #0c1f53 32.53%,
+    #081539 45.04%,
+    #081539 79.75%,
+    #011a3e 100%
+  );
+}
+
+#third-navbar .container .info p {
+  color: #ff7c08;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  font-size: 1rem;
+  padding-top: 14px;
+}
+
+#third-navbar .third-navbar-right a {
+  color: #fcfcfc;
+}
+
+#third-navbar .third-navbar-right ul li ul li a {
+  color: black;
+}
