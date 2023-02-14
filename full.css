@@ -5,6 +5,12 @@
   box-sizing: border-box;
   font-family: "Gordita", sans-serif;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gordita", sans-serif;
+}
 .sticky-top {
   position: fixed;
   top: 0;
@@ -41,32 +47,32 @@
 }
 
 #main-navbar {
-  width: 100%;
   background-color: #081539;
-  border-bottom: 1px solid #f5f5f5;
 }
 
-#main-navbar ul li a {
-  color: #f5f5f5;
-  text-decoration: none;
+#main-navbar li a {
+  color: #ffffff;
 }
 
-#main-navbar ul li .dropdown-item {
-  color: #081539;
-}
-
-#navbarNavDropdown {
-  display: flex;
-  justify-content: end;
-  align-items: center;
+#main-navbar ul li ul li a {
+  color: black;
 }
 
 #navbarNavDropdown ul li {
   padding-left: 2.5rem;
 }
 
-#navbarNavDropdown img {
+.search-icon {
+  padding-top: 2px;
   padding-left: 2.5rem;
+}
+
+/* hover yapmak için */
+@media (min-width: 576px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
 }
 
 .bg-gradient-navbarcolor {
@@ -81,30 +87,27 @@
   );
 }
 
-.info-text {
-  color: #f67b10;
-  font-size: 1.2rem;
-  padding-top: 10px;
+#third-navbar .container .info p {
+  color: #ff7c08;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  font-size: 1rem;
+  padding-top: 14px;
 }
 
-.bottom-navbar {
-  border-bottom: 1px solid #fcfcfc;
+#third-navbar .third-navbar-right a {
+  color: #fcfcfc;
 }
 
-.bottom-navbar ul li a {
-  color: #f5f5f5;
-  text-decoration: none;
-}
-
-.bottom-navbar ul li a:hover {
-  color: #f67b10;
+#third-navbar .third-navbar-right ul li ul li a {
+  color: black;
 }
 
 .home {
   background-image: url(./homebg.png);
   background-size: cover;
   /* width: 100vw; */
-  height: 100vh;
+  height: 110vh;
   width: auto;
   background-position: center;
 }
@@ -117,9 +120,7 @@
 }
 
 .home-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding-top: 5rem;
   color: #fcfcfc;
   font-size: 3rem;
@@ -193,11 +194,11 @@
   margin-top: 100px;
 }
 
-.col {
-  flex: 1 0 0%;
-}
+/* .col {
+    flex: 1 0 0%;
+  } */
 
-.col .btn-link {
+.btn-link {
   background-color: #ff7b07;
   color: #ffffff;
   padding: 20px 30px;
@@ -208,21 +209,21 @@
   height: 70px;
 }
 
-.col .btn-link .contact-us {
+.btn-link .btn-link-inside {
   display: contents;
   width: 100%;
 }
 
-.col .btn-link .contact-us p {
+.btn-link .btn-link-inside p {
   font-weight: 600;
   padding-top: 1rem;
 }
 
-.col .btn-link .contact-us img {
+.btn-link .btn-link-inside img {
   margin-left: auto;
 }
 
-.col .btn-link:hover {
+.btn-link:hover {
   color: #ffffff;
 }
 
@@ -267,35 +268,6 @@
   text-align: center;
   letter-spacing: 0.5px;
   line-height: 2;
-}
-
-.numerical-info .btn-link {
-  background-color: #ff7b07;
-  color: #ffffff;
-  padding: 20px 30px;
-  max-width: 250px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  height: 70px;
-}
-
-.numerical-info .btn-link .btn-link-inside {
-  display: contents;
-  width: 100%;
-}
-
-.numerical-info .btn-link .btn-link-inside p {
-  font-weight: 600;
-  padding-top: 1rem;
-}
-
-.numerical-info .btn-link .btn-link-inside img {
-  margin-left: auto;
-}
-
-.numerical-info .btn-link:hover {
-  color: #ffffff;
 }
 
 .numerical-info .content .orange-box {
@@ -350,35 +322,6 @@
   padding-bottom: 10px;
 }
 
-.industries .btn-link {
-  background-color: #ff7b07;
-  color: #ffffff;
-  padding: 20px 30px;
-  max-width: 250px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  height: 70px;
-}
-
-.industries .btn-link .btn-link-inside {
-  display: contents;
-  width: 100%;
-}
-
-.industries .btn-link .btn-link-inside p {
-  font-weight: 600;
-  padding-top: 1rem;
-}
-
-.industries .btn-link .btn-link-inside img {
-  margin-left: auto;
-}
-
-.industries .btn-link:hover {
-  color: #ffffff;
-}
-
 /* partners */
 
 .partners .content {
@@ -417,31 +360,4 @@
   right: 0;
 }
 
-.partners .btn-link {
-  background-color: #ff7b07;
-  color: #ffffff;
-  padding: 20px 30px;
-  max-width: 250px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  height: 70px;
-}
-
-.partners .btn-link .btn-link-inside {
-  display: contents;
-  width: 100%;
-}
-
-.partners .btn-link .btn-link-inside p {
-  font-weight: 600;
-  padding-top: 1rem;
-}
-
-.partners .btn-link .btn-link-inside img {
-  margin-left: auto;
-}
-
-.partners .btn-link:hover {
-  color: #ffffff;
-}
+/* bootstrap preselectorlerini kullanma */
