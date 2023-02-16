@@ -346,8 +346,12 @@
 }
 
 .services-solutions h2 {
+  color: #081539;
+  padding-top: 1.5rem;
   padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .services-solutions #pills-tab {
