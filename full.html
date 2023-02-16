@@ -21,6 +21,8 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
+    <!-- navs and tabs kullan hizmtler ve çözüler için -->
   </head>
   <body>
     <div class="sticky-top">
@@ -88,7 +90,18 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-hamburger">
+              <a href="#" class="mt-1 hamburger-search">
+                <img
+                  src="https://www.elips.com/Assets/img/theme/search-icon.png"
+                  alt=""
+                />
+              </a>
+              <img
+                src="	https://www.elips.com/Assets/img/theme/navbar-dropdown-icon.png"
+                alt=""
+              />
+            </span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -196,6 +209,72 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item dropdown d-lg-none">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  BAŞARI ÖYKÜLERİMİZ
+                </a>
+                <ul
+                  class="dropdown-menu d-lg-none"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown d-lg-none">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  İŞ ORTAKLARIMIZ
+                </a>
+                <ul
+                  class="dropdown-menu d-lg-none"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown d-lg-none">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  BLOG
+                </a>
+                <ul
+                  class="dropdown-menu d-lg-none"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link"
@@ -218,6 +297,42 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item dropdown d-lg-none">
+                <a class="contact-info-text" href="#">
+                  <img
+                    class="img-fluid img-contact"
+                    src="https://www.elips.com/Assets/img/theme/phone-logo.png"
+                    alt="phone-image"
+                  />
+                  +90 (212) 337 02 00
+                </a>
+              </li>
+              <li class="nav-item dropdown d-lg-none">
+                <a class="contact-info-text" href="#">
+                  <img
+                    class="img-fluid img-contact"
+                    src="https://www.elips.com/Assets/img/theme/mail-logo.png"
+                    alt="phone-image"
+                  />
+                  elips@elips.com
+                </a>
+              </li>
+              <li class="nav-item dropdown d-lg-none">
+                <a class="contact-info-text" href="https://www.linkedin.com">
+                  <img
+                    class="img-fluid img-social linkedin-logo"
+                    src="	https://www.elips.com/Assets/img/theme/linkedin-logo.png"
+                    alt="linedin-img"
+                  />
+                </a>
+                <a href="https://www.whatsapp.com">
+                  <img
+                    class="img-contact img-social"
+                    src="	https://www.elips.com/Assets/img/theme/whatsapp-logo.png"
+                    alt="whatsapp-img"
+                  />
+                </a>
+              </li>
               <a href="#" class="mt-1 search-icon">
                 <img
                   src="https://www.elips.com/Assets/img/theme/search-icon.png"
@@ -229,7 +344,7 @@
         </div>
       </nav>
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-gradient-navbarcolor d-none d-lg-block d-sm-block"
+        class="navbar navbar-expand-lg navbar-dark bg-gradient-navbarcolor d-none d-lg-block d-sm-none"
         id="third-navbar"
       >
         <div class="container">
@@ -281,7 +396,7 @@
                     İŞ ORTAKLARIMIZ
                   </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown blog-dropdown">
                   <a
                     class="nav-link"
                     href="#"
@@ -476,8 +591,8 @@
           </div>
           <div class="row">
             <div class="col">
-              <a href="#" class="btn-link text-decoration-none">
-                <div class="btn-link-inside">
+              <a href="#" class="button-link text-decoration-none">
+                <div class="button-link-inside">
                   <p>Bize Ulaşın</p>
                   <img
                     src="https://www.elips.com/assets/img/theme/right-arrow-icon.png"
@@ -491,6 +606,325 @@
       </div>
     </section>
 
+    <!-- Services and Solutionos -->
+    <section class="services-solutions">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-solutions-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-solutions"
+            type="button"
+            role="tab"
+            aria-controls="pills-solutions"
+            aria-selected="true"
+          >
+            ÇÖZÜMLER
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-services-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-services"
+            type="button"
+            role="tab"
+            aria-controls="pills-services"
+            aria-selected="false"
+          >
+            HİZMETLER
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane show active"
+          id="pills-solutions"
+          role="tabpanel"
+          aria-labelledby="pills-solutions-tab"
+          tabindex="0"
+        >
+          <div class="content solutions">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 left-part">
+                  <div class="row left-row">
+                    <div class="col-12">
+                      <h2>Çözümler</h2>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Veri Merkezi Çözümleri</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Kurumsal Ağ Çözümleri</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>IT Konsolidasyon & Sanallaştırma</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Güvenlik Çözümlerimiz</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Bulut Çözümlerimiz</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Mobil ve Son Kullanıcı Çözümlerimiz</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>
+                          Baskı Merkezi Çözümleri ve Güvenli Döküman Yönetimi
+                        </li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Dijital İş Çözümleri</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-6 d-none d-lg-block right-part position-relative"
+                >
+                  <img
+                    class="right-image"
+                    src="https://www.elips.com/assets/img/home/gazete_fotograf.png"
+                    alt="gazete_fotograf"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="pills-services"
+          role="tabpanel"
+          aria-labelledby="pills-services-tab"
+          tabindex="0"
+        >
+          <div class="content services">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 left-part">
+                  <div class="row left-row">
+                    <div class="col-12">
+                      <h2>Hizmetler</h2>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Microsoft İş Çözümleri & Danışmanlık Hizmetleri</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Proje Kurulum & Yönetim Hizmetleri</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Danışmanlık Destek Hizmetleri</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Profesyonel Hizmetler</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>7x24 Teknik Destek Hizmetler</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Garanti Paketleri Hizmetleri</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Satış Hizmetleri</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Altyapı ve Yapısal Kablolama</li>
+                        <a href="#">
+                          <p>incele</p>
+                          <img
+                            src="https://www.elips.com/assets/img/theme/blue-arrow-list.svg"
+                            alt="mavı ok"
+                          />
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-6 d-none d-lg-block right-part position-relative"
+                >
+                  <img
+                    class="right-image"
+                    src="https://www.elips.com/assets/img/home/gazete_fotograf.png"
+                    alt="gazete_fotograf"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row mt-5 justify-content-start">
+            <div class="col-lg-3">
+              <a href="#" class="button-link text-decoration-none m-auto">
+                <div class="button-link-inside">
+                  <p>Daha Fazla Bilgi</p>
+                  <img
+                    src="https://www.elips.com/assets/img/theme/right-arrow-icon.png
+                  "
+                    alt="ok "
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="seperator-img">
+      <img
+        src="https://www.elips.com/assets/img/home/mavi_uc_cizgi.png"
+        alt="mavi çizgi"
+        class="blue-seperator img-fluid"
+      />
+      <img
+        src="	https://www.elips.com/assets/img/home/turuncu_uc_cizgi.svg"
+        alt="turuncu çizgi"
+        class="orange-seperator img-fluid"
+      />
+    </div>
     <!-- numrerical info -->
 
     <section class="numerical-info">
@@ -504,7 +938,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-sm-6 col-6">
+            <div class="col-lg-3 col-sm-6 col-12">
               <div class="box">
                 <div class="info-box">
                   <h1>30+</h1>
@@ -512,7 +946,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-6 position-relative">
+            <div class="col-lg-3 col-sm-6 col-12 position-relative">
               <div class="orange-box"></div>
               <div class="box">
                 <div class="info-box">
@@ -521,7 +955,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-6 position-relative">
+            <div class="col-lg-3 col-sm-6 col-12 position-relative">
               <div class="blue-box"></div>
               <div class="box">
                 <div class="info-box">
@@ -530,7 +964,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-6">
+            <div class="col-lg-3 col-sm-6 col-12">
               <div class="box">
                 <div class="info-box">
                   <h1>50+</h1>
@@ -541,8 +975,8 @@
           </div>
           <div class="row mt-5 justify-content-center">
             <div class="col-lg-3">
-              <a href="#" class="btn-link text-decoration-none m-auto">
-                <div class="btn-link-inside">
+              <a href="#" class="button-link text-decoration-none m-auto">
+                <div class="button-link-inside">
                   <p>Başarı Öykülerimiz</p>
                   <img
                     src="https://www.elips.com/assets/img/theme/right-arrow-icon.png
@@ -833,8 +1267,8 @@
           </div>
           <div class="row mt-5 justify-content-center">
             <div class="col-lg-3">
-              <a href="#" class="btn-link text-decoration-none m-auto">
-                <div class="btn-link-inside">
+              <a href="#" class="button-link text-decoration-none m-auto">
+                <div class="button-link-inside">
                   <p>Tüm Sektörler</p>
                   <img
                     src="https://www.elips.com/assets/img/theme/right-arrow-icon.png
@@ -1072,8 +1506,8 @@
           </div>
           <div class="row mt-5 justify-content-center">
             <div class="col-lg-3">
-              <a href="#" class="btn-link text-decoration-none m-auto">
-                <div class="btn-link-inside">
+              <a href="#" class="button-link text-decoration-none m-auto">
+                <div class="button-link-inside">
                   <p>Tümünü Gör</p>
                   <img
                     src="https://www.elips.com/assets/img/theme/right-arrow-icon.png
@@ -1124,12 +1558,12 @@
                 <label for="inputEmail4" class="form-label">Email*</label>
                 <input type="email" class="form-control" id="inputEmail4" />
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 mt-5 form-button-div">
                 <a
                   href="#"
-                  class="btn-link text-decoration-none m-auto form-button"
+                  class="button-link text-decoration-none m-auto form-button"
                 >
-                  <div class="btn-link-inside">
+                  <div class="button-link-inside">
                     <p>Gönder</p>
                     <img
                       src="https://www.elips.com/Assets/img/theme/footer-orange-arrow.svg
@@ -1303,6 +1737,7 @@
                 </div>
                 <div class="white-seperator">
                   <img
+                    class="img-fluid"
                     src="	https://www.elips.com/Assets/img/theme/footer-divider.png"
                     alt="white-seperator"
                   />
