@@ -619,6 +619,32 @@
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  .second-footer .content .address-info {
+    text-align: left;
+    padding-top: 1rem;
+  }
+
+  .second-footer .content .address-info p {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .second-footer .content .mail-and-phone p {
+    text-align: left !important;
+  }
+
+  .second-footer .content .mail-and-phone .linkedin-wp {
+    justify-content: left !important;
+  }
+
+  .second-footer .content .mail-and-phone a {
+    padding-left: 0 !important;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
 .second-footer .content .mail-and-phone a {
   text-decoration: none;
   color: #f5f5f5;
