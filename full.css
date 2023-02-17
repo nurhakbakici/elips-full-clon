@@ -76,7 +76,7 @@
 }
 
 #navbarNavDropdown .nav-link {
-  padding-top: 1rem;
+  padding-top: 1.2rem;
 }
 
 #main-navbar .dropdown-menu li a {
@@ -106,8 +106,8 @@
 
 .search-icon {
   padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   border-left: 1px solid white;
   border-right: 1px solid white;
   height: 58px;
@@ -315,10 +315,13 @@
 
 .services-solutions .solutions {
   background-image: url(https://www.elips.com/assets/img/cozumler/blue-bg.png);
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .services-solutions .services {
   background-image: url(https://www.elips.com/assets/img/hizmetler/orange-bg.png);
+  padding: 0 1rem;
 }
 
 .services-solutions .left-part {
@@ -352,6 +355,12 @@
   padding-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .services-solutions h2 {
+    text-align: center;
+  }
 }
 
 .services-solutions #pills-tab {
