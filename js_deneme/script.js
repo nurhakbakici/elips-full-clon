@@ -20,10 +20,10 @@ function myFunction1() {
 
 function myFunction2(){
   var x = document.getElementById("search-icon");
-  if(x.style.backgroundColor= "#081539"){
-    x.style.backgroundColor="#0068FA"
+  if(x.style.backgroundColor== "rgb(0, 104, 250)"){
+    x.style.backgroundColor="rgb(8, 21, 57)"
   } else{
-    x.style.backgroundColor="#081539"
+    x.style.backgroundColor="rgb(0, 104, 250)"
   }
 }
 
@@ -33,4 +33,8 @@ function myFunction3() {
   } else {
       document.getElementById("search-button-img").src = "https://www.elips.com/Assets/img/theme/search-icon.png";
   }
+}
+
+function myFunction4(){
+  document.getElementById("search-text").focus();
 }

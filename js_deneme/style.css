@@ -52,7 +52,7 @@
 }
 
 #main-navbar {
-  background-color: #081539;
+  background-color: rgb(8, 21, 57);
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -162,6 +162,12 @@
 
 #third-navbar .blog-dropdown {
   padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  #third-navbar {
+    display: none !important;
+  }
 }
 
 .bg-gradient-navbarcolor {
@@ -745,6 +751,11 @@
   border-radius: 0;
   display: inline-block;
   margin-left: 15vw;
+  padding-left: 2rem;
+}
+
+input:placeholder-shown {
+  background-color: #005ad8 !important;
 }
 
 .hidden-searchbar #search-button {
