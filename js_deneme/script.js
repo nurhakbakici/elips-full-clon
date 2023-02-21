@@ -38,3 +38,21 @@ function myFunction3() {
 function myFunction4(){
   document.getElementById("search-text").focus();
 }
+
+function myFunction5(){
+  var x = document.getElementById("search-icon1");
+  if(x.style.backgroundColor== "rgb(0, 104, 250)"){
+    x.style.backgroundColor="rgb(8, 21, 57)"
+  } else{
+    x.style.backgroundColor="rgb(0, 104, 250)"
+  }
+}
+
+
+function myFunction6() {
+  if (document.getElementById("search-button-img1").src == "https://www.elips.com/Assets/img/theme/search-icon.png"){
+      document.getElementById("search-button-img1").src = "https://www.elips.com/Assets/img/theme/x-icon.png";
+  } else {
+      document.getElementById("search-button-img1").src = "https://www.elips.com/Assets/img/theme/search-icon.png";
+  }
+}
